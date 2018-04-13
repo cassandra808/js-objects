@@ -265,6 +265,12 @@ console.log (sumObjResult);
         Invoke this function and pass in your object. Further test by changing the values of the object being passed in or 
         **create more** objects and invoke your function multiple times.
  */
+function printObj (obj){
+    obj.output = console.log (sumObjResult);
+    return obj.a + " + " + obj.b + " = " + obj.result
+}
+console.log (printObj(sumObjResult));
+
 
 
 /*
